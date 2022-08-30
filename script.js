@@ -10,12 +10,12 @@ document.getElementById("hover-this").onmouseover = () => {
 document.getElementById("hover-this").onmouseout = () => {
   setBackgroundColorById("body", "white");
 };
-function getValueFromId(id) {
+const getValueFromId = (id) => {
   document.getElementById(id).value;
-}
-function setBackgroundColorById(id, color) {
+};
+const setBackgroundColorById = (id, color) => {
   document.getElementById(id).style = "background-color: " + color;
-}
-function mouseOverFunction(el) {
+};
+const mouseOverFunction = (el) => {
   el.style = "background-color: black";
-}
+};
